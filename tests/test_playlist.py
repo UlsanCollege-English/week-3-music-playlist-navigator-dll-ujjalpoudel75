@@ -1,4 +1,9 @@
-from src.playlist import Playlist
+# tests/test_playlist.py
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
+from playlist import Playlist
 
 def test_add_play_nav_insert_remove():
     p = Playlist()
